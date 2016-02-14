@@ -58,7 +58,7 @@ It's worth to mention that the boilerplate uses the **latest stable version** av
 
 Assuming you already have the needed **MEAN Stack** pieces installed on your computer/server (**[MongoDB][2]**, **[NodeJS][3]** & **[ExpressJS][4]**) plus **[Git][5]** & **[Bower][6]** Just run:
 
-    1. git clone https://github.com/Jmlevick/mean-boilerplate.git MY_APP
+    1. git clone -b javascript --single-branch https://github.com/Jmlevick/mean-boilerplate.git MY_APP
     2. cd MY_APP
     3. git init
     4. npm install -g gulp gulp-cli
