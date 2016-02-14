@@ -10,7 +10,6 @@
   "dependencies": {
     "express": "4.x",
     "jade": "*",
-    "node-sass-middleware": "*",
     "coffee-script": "1.10.0",
     "kerberos": "*",
     "mongoose": "4.x",
