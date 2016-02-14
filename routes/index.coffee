@@ -23,4 +23,4 @@ module.exports = (app, passport) ->
     res.redirect(redirection_url)
 
   # Imports
-  require('./entities/users/controller')(app)
+  require('../entities/users/controller')(app)

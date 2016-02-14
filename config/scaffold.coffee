@@ -12,8 +12,8 @@ mvc_scaffold = path.join(root, "scaffolds/entities/dummies")
 mvc_dest =  path.join(root, "entities/#{name}")
 views_scaffold = path.join(root, "scaffolds/views/dummies")
 views_dest = path.join(root, "views/entity_views/#{name}")
-routes_file = "#{root}/routes.coffee"
-routes_scaffold = "  require('./entities/#{name}/controller')(app)"
+routes_file = "#{root}/routes/index.coffee"
+routes_scaffold = "  require('../entities/#{name}/controller')(app)"
 
 
 String::capitalizeFirstLetter = ->

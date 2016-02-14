@@ -1,3 +1,35 @@
+## Version 5.0.0
+
+- Now you can choose between **Javascript** & **Coffeescript** (new JS branch)
+- Removed **whenever** ruby gem
+- Added full **Angular SPA** boilerplate code
+- New **routing** scheme
+- Updated to **Coffeescript 1.10.0**  
+- Better **concurrency** implementation
+- Moved to **Gulp** as build tool, some tasks available right now are:
+
+*Automatic Tasks:*
+
+> - **sass:** Live compiling of **scss** files to **minified css**
+- **jscoffee:** Live compiling of **coffee** files to **minified js**
+- **jshint:** Javascript **linter** for your project
+- **build-js:** Compiles files on **static/assets/js** to **minified js** (with sourcemaps) separately
+- **build-ng:** Compiles and concatenates all your angular app code into one single minified file (with sourcemaps)
+
+*Manual Tasks:*
+
+> - **img-optimizer:** Lossless compression for all the images used in your project
+
+*NOTE: Some NPM Tasks are still available:*
+
+> - **start:** Starts the project via **nodemon**
+- **createadmin:** Task for creating a project-wide **superuser**
+- **scaffold:** Magical scaffold generator
+
+- Various **Bugfixes**
+
+> More information available at [**README.md**][1]
+
 ## Version 4.0.0
 
 - **Bugfixes** (added coffeescript/register module, moved bower_components location, etc.)
@@ -17,8 +49,6 @@
 - **Global YAML Configuration** (controllers, models, app.js)
 - **PassportJS** Local Strategy for authentication and refactored authorization
 - New **welcome page** with a **Getting started** introduction and some Docs
-
-> More information available at [**README.md**][1]
 
 ## Version 3.0.0
 
