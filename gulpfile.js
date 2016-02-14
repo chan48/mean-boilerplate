@@ -6,7 +6,6 @@ var gulp   = require('gulp'),
     rename = require('gulp-rename'),
     gutil = require('gulp-util'),
     imagemin = require('gulp-rename'),
-    coffee = require('gulp-coffee'), 
     sass = require('gulp-sass'),
     imagemin = require('gulp-imagemin'),
     pngquant = require('imagemin-pngquant'); 
@@ -25,17 +24,6 @@ gulp.task('sass', function () {
     .pipe(sass({outputStyle: 'compressed'})).on('error', handleError)
     .pipe(rename({ suffix: '.min' })).on('error', handleError)
     .pipe(gulp.dest('static/assets/css'));
-});
-
-// Coffee Compiler
-gulp.task('jscoffee', function() {
-  gulp.src('static/assets/coffee/*.coffee')
-    .pipe(sourcemaps.init()).on('error', handleError)
-      .pipe(coffee()).on('error', handleError)
-      .pipe(uglify()).on('error', handleError)
-      .pipe(rename({ suffix: '.min' })).on('error', handleError)
-    .pipe(sourcemaps.write()).on('error', handleError)
-    .pipe(gulp.dest('static/assets/js/dist')).on('error', handleError);
 });
 
 // JS Linter
@@ -77,7 +65,6 @@ gulp.src('static/assets/img/*')
 // Watcher
 gulp.task('watch', function() {
   gulp.watch('static/assets/scss/**/*.scss', ['sass']);
-  gulp.watch('static/assets/coffee/*.coffee', ['jscoffee']);
   gulp.watch(['static/app/**/*.js', 'static/assets/js/*.js'], ['jshint']);
   gulp.watch('static/assets/js/*.js', ['build-js']);
   gulp.watch('static/app/**/*.js', ['build-ng']);
