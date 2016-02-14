@@ -20,7 +20,7 @@
 
   views_dest = path.join(root, "views/entity_views/" + name);
 
-  routes_file = root + "/routes/index.coffee";
+  routes_file = root + "/routes/index.js";
 
   routes_scaffold = "  require('../entities/" + name + "/controller')(app);";
 
